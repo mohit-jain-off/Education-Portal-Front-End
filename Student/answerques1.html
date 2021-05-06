@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<title>Question 1</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+.w3-hover-blue{
+  
+  background: #0366D6 !important;
+}
+
+.dropdown{
+  width:250px;
+  padding: 10px;
+ 
+
+}
+</style>
+<body class="w3-light-grey">
+
+<!-- Top container -->
+<div class="w3-bar w3-top w3-black w3-large" style="z-index:4">
+  <button class="w3-bar-item w3-button w3-hide-large w3-hover-none w3-hover-text-light-grey" onclick="w3_open();"><i class="fa fa-bars"></i> &nbsp;Menu</button>
+  <span class="w3-bar-item w3-left w3-hide-small">Centre for Digital Knowledge</span>
+  <span class="w3-bar-item w3-right w3-hide-small">Rajalakshmi Engineering College</span>
+</div>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+  <div class="w3-container w3-row">
+    
+    <div class="w3-col s8 w3-bar">
+      <span>Welcome, <strong>Mike</strong></span><br>
+      
+    </div>
+  </div>
+  <hr>
+  <div class="w3-container">
+    <h5>Dashboard</h5>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#" class="w3-bar-item w3-button w3-padding-16 w3-hide-large w3-dark-grey w3-hover-black" onclick="w3_close()" title="close menu"><i class="fa fa-remove fa-fw"></i>&nbsp; Close Menu</a>
+    <a href="studentdashboard.html" class="w3-bar-item w3-button w3-padding "><i class="fa fa-home fa-fw"></i>&nbsp; Over View</a>
+    <a href="taketest.html" class="w3-bar-item w3-button w3-padding "><i class="fa fa-eye fa-fw"></i>&nbsp; Take test</a>
+    <a href="report.html" class="w3-bar-item w3-button w3-padding"><i class="fa fa-folder fa-fw"></i>&nbsp; Report Generation</a>
+    <a href="studentprofile.html" class="w3-bar-item w3-button w3-padding"><i class=" fa fa-user-circle fa-fw"></i>&nbsp; Profile</a>
+    <a href="index.html" class="w3-bar-item w3-button w3-padding"><i class="fa fa-sign-out fa-fw"></i>&nbsp; Logout</a>
+  
+</nav>
+<div class="w3-row">
+    <div class="w3-content">
+
+      <div class="w3-card w3-white w3-hover-shadow w3-padding" style="margin-left: 25%;margin-top: 10%;">
+      <h4><b><span></span>Question:</b><span></span></h4>
+       <h5><b><input class="w3-radio" type="radio" name="o1"> Option A: </b><span></span></h5>
+       <h5><b><input class="w3-radio" type="radio" name="o1"> Option B: </b><span></span></h5>
+       <h5><b><input class="w3-radio" type="radio" name="o1"> Option C: </b><span></span></h5>
+       <h5><b><input class="w3-radio" type="radio" name="o1"> Option D: </b><span></span></h5>
+       <br>
+       <br>
+       <input type="submit" value="Quit and Submit" style="margin-left: 2%; width:130px; padding: 10px; outline: none" class="w3-button w3-black  w3-hover-blue">
+       <input type="submit" value="Previous" style="margin-left: 3%; width:100px; padding: 10px; outline: none" class="w3-button w3-black  w3-hover-blue">
+       <input type="submit" value="Next" style="margin-left: 4%; width:100px; padding: 10px; outline: none" class="w3-button w3-black  w3-hover-blue" >
+       <input type="submit" value="Save and Next" style="margin-left: 5%; width:120px; padding: 10px; outline: none" class="w3-button w3-black  w3-hover-blue">
+       <br>
+       <br>
+       <br>
+  </div>
+      </div>
+  </div>
+
+
+
+
+  <!-- End page content -->
+</div>
+
+<script>
+// Get the Sidebar
+var mySidebar = document.getElementById("mySidebar");
+
+// Get the DIV with overlay effect
+var overlayBg = document.getElementById("myOverlay");
+
+// Toggle between showing and hiding the sidebar, and add overlay effect
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+    overlayBg.style.display = "none";
+  } else {
+    mySidebar.style.display = 'block';
+    overlayBg.style.display = "block";
+  }
+}
+</script>
+</nav>
+</body>
+</html>

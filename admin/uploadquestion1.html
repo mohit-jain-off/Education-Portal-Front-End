@@ -1,0 +1,155 @@
+
+<!DOCTYPE html>
+<html>
+<title>UPLOAD</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+.w3-hover-blue{
+  
+  background: #0366D6 !important;
+}
+
+.dropdown{
+  width:250px;
+  padding: 10px;
+ 
+
+}
+</style>
+<body class="w3-light-grey">
+
+<!-- Top container -->
+<div class="w3-bar w3-top w3-black w3-large" style="z-index:4">
+  <button class="w3-bar-item w3-button w3-hide-large w3-hover-none w3-hover-text-light-grey" onclick="w3_open();"><i class="fa fa-bars"></i> &nbsp;Menu</button>
+  <span class="w3-bar-item w3-left w3-hide-small">Centre for Digital Knowledge</span>
+  <span class="w3-bar-item w3-right w3-hide-small">Rajalakshmi Engineering College</span>
+</div>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+  <div class="w3-container w3-row">
+    
+    <div class="w3-col s8 w3-bar">
+      <span>Welcome, <strong>Mike</strong></span><br>
+      
+    </div>
+  </div>
+  <hr>
+  <div class="w3-container">
+    <h5>Dashboard</h5>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#" class="w3-bar-item w3-button w3-padding-16 w3-hide-large w3-dark-grey w3-hover-black" onclick="w3_close()" title="close menu"><i class="fa fa-remove fa-fw"></i>&nbsp; Close Menu</a>
+    <a href="admindashboard.html" class="w3-bar-item w3-button w3-padding "><i class="fa fa-home fa-fw"></i>&nbsp; Over View</a>
+    <a href="uploadquestion1.html" class="w3-bar-item w3-button w3-padding "><i class="fa fa-upload fa-fw"></i>&nbsp; Upload Question</a>
+    <a href="viewquestion1.html" class="w3-bar-item w3-button w3-padding "><i class="fa fa-eye fa-fw"></i>&nbsp; View Question</a>
+    <a href="editquestion1.html" class="w3-bar-item w3-button w3-padding"><i class="fa fa-edit fa-fw"></i>&nbsp;Edit Question </a>
+    <a href="adminprofile.html" class="w3-bar-item w3-button w3-padding"><i class=" fa fa-user-circle fa-fw"></i>&nbsp; Profile</a>
+    <a href="index.html" class="w3-bar-item w3-button w3-padding"><i class="fa fa-sign-out fa-fw"></i>&nbsp; Logout</a>
+</nav>
+
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px;margin-top:43px;">
+
+  <header class="w3-container" style="padding-top:22px">
+    <h3><b>Upload Question</b></h3>
+  </header>
+
+   <!--row-->
+
+   <div class="w3-row">
+    <div class="w3-content">
+
+      <div class="w3-card w3-white w3-hover-shadow w3-padding" style="margin-left: 35%;margin-right: 35%; margin-top: 10%;">
+      <br>
+      <br>
+
+
+     <form  action="">
+      <b>MONTH</b>
+      <select class="dropdown" name="week" default="1">
+        <option value="JANUARY">JANUARY</option>
+        <option value="FEBURARY">FEBURARY</option>
+        <option value="MARCH">MARCH</option>
+        <option value="APRIL">APRIL</option>
+        <option value="MAY">MAY</option>
+        <option value="JUNE">JUNE</option>
+        <option value="JULY">JULY</option>
+        <option value="AUGUST">AUGUST</option>
+        <option value="SEPTEMBER">SEPTEMBER</option>
+        <option value="OCTOBER">OCTOBER</option>
+        <option value="NOVEMBER">NOVEMBER</option>
+        <option value="DECEMBER">DECEMBER</option>
+
+
+      </select>
+      <br>
+      <br>
+      <b>WEEK</b>
+      <select class="dropdown" name="week" default="1">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+      </select>
+      <br>
+      <br>
+
+      <b>MODULE NAME</b>
+        <select class="dropdown">
+        <option value="cs">Communication Skills</option>
+        <option value="qaas">Quantitative and Aptitude Skills</option>
+        <option value="pl">Programming Logic</option>
+        <option value="apl">Advanced Programming Logic</option>
+        <option value="calt">Critical and Lateral thinking</option>
+        <option value="agile">AGILE Development</option>
+      </select>
+      <br>
+      <br>
+
+       <p><a href="uploadquestion.html" class="w3-button w3-black  w3-hover-blue" style="width:100px; margin-left:30%; padding: 10px;outline: none"> Upload Test</a></p>
+
+    </form>
+  
+
+  </div>
+
+<br>
+<br>
+  
+<script>
+// Get the Sidebar
+var mySidebar = document.getElementById("mySidebar");
+
+// Get the DIV with overlay effect
+var overlayBg = document.getElementById("myOverlay");
+
+// Toggle between showing and hiding the sidebar, and add overlay effect
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+    overlayBg.style.display = "none";
+  } else {
+    mySidebar.style.display = 'block';
+    overlayBg.style.display = "block";
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+  mySidebar.style.display = "none";
+  overlayBg.style.display = "none";
+}
+</script>
+
+</body>
+</html>
